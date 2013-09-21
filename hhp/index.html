@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0030)http://test.gumptech.net/luke/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Knowledge Connected</title>
+
+<link rel="stylesheet" type="text/css" href="./index_files/style.css" media="screen">
+<script type="text/javascript" src="./index_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+function subscribe()
+{
+	jQuery('#msg').html('<img src="img/loader.gif" height="24px">');
+	var email	=	jQuery('#email').val();
+	$.post("mailchimp/subscribe.php", { email: email}, function(data) {
+		jQuery('#msg').html(data);
+	});
+}
+</script>
+</head>
+
+<body style="">
+		
+		
+		
+		<div class="header"><img src="./index_files/header.png"></div><!-- header -->
+		
+		<div class="content">
+		
+		<h1>Knowledge Connected</h1>
+		<p>Horatious has developed and is testing a novel blended learning system, that invokes many kinds of mobile and human connectivity for complete range of learning. We are evaluating with professional training programs, with certified programs as well as informal knowledge exchange. If you like to know more please register with us now.</p>
+		
+				<div class="c2">
+			
+					<div class="socials">
+						<div class="find">find us on: </div><div class="socials-images"><a href="http://www.facebook.com/"><img src="./index_files/fb.png"></a><a href="https://twitter.com/horatiouscom"><img src="./index_files/twitter.png"></a><a href="http://www.linkedin.com/company/3183839?trk=tyah"><img src="./index_files/in.png"></a></div>
+					</div><!-- socials -->
+					<div class="reg">
+
+					<input type="text" id="email" name="email" placeholder="enter your e-mail address" class="txtreg">
+					<input type="submit" value="Notify me" class="btn-notify" onclick="subscribe()">
+                    <div id="msg"></div>
+					</div><!-- reg -->
+				</div>	
+			
+		
+		
+		
+		
+		</div><!-- content -->
+		
+		
+		<div style="clear:both"></div>
+		
+		<div class="content">
+		
+		<div class="bo"><a href="mailto:info@horatious.com" class="at"><img src="./index_files/at.png"></a></div>
+		
+		
+		
+		
+		<div class="bottom">
+			
+			<p class="drop">Drop us a line</p>
+			
+			<p class="copyright">Copyright Horatious Limited 2013</p>
+			
+			</div><!-- bottom -->
+		
+		</div>
+		
+		
+		
+
+
+
+</body></html>
